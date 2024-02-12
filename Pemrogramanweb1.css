@@ -1,0 +1,16 @@
+H1{
+    color: green;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+p{
+    text-align: center;
+    font-size: medium;
+    color: teal;
+}
+body{
+    background-color: grey;
+}
