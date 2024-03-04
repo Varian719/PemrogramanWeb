@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #b38c00;
+    color: white;
+}
+
+tr{
+    background-color: #f2f2f2;
+    
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: #000;
+    text-decoration: underline;
+
+}
+button{
+    margin-left:140px;
+    background-color: aqua;
+}
+button a{
+   color: white;
+}
+.update{
+    background-color: green;
+    color: white;
+}
+.update:hover {
+    color: white;
+    text-decoration: underline;
+
+}
+.delete{
+    background-color: red;
+    color: white;
+}
+.delete:hover {
+    color: white;
+    text-decoration: underline;
+
+}
