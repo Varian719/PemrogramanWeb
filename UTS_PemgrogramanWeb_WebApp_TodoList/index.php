@@ -3,12 +3,30 @@ require 'db_conn.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do List</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    .add-section button {
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin: 0px auto;
+    border: none;
+    outline: none;
+    background: #430ac7;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
     <div class="main-section">
@@ -24,7 +42,7 @@ require 'db_conn.php';
              <?php }else{ ?>
               <input type="text" 
                      name="title" 
-                     placeholder="What do you need to do?" />
+                     placeholder="Todo list" />
               <button type="submit">Add &nbsp; <span>&#43;</span></button>
              <?php } ?>
           </form>
@@ -59,7 +77,7 @@ require 'db_conn.php';
                         <h2><?php echo $todo['title'] ?></h2>
                     <?php } ?>
                     <br>
-                    <small>created: <?php echo $todo['date_time'] ?></small> 
+                    <small>dibuat: <?php echo $todo['date_time'] ?></small> 
                 </div>
             <?php } ?>
        </div>
